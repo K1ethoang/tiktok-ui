@@ -1,6 +1,7 @@
 .wrapper {
     --search-border-radius: 92px;
     --search-height: 46px;
+    --search-width: 360px;
     --search-top-space: 9px;
     --search-btn-width: 52px;
     --icon-color: rgba(22, 24, 35, 0.34);
@@ -20,7 +21,7 @@
 }
 
 .search {
-    width: 360px;
+    width: var(--search-width);
     height: var(--search-height);
     display: flex;
     align-items: center;
@@ -48,6 +49,16 @@
     &:focus-within {
         border-color: rgba(22, 24, 35, 0.2);
     }
+}
+
+.search-result {
+    width: var(--search-width);
+}
+
+.search-title {
+    color: var(--grey);
+    font-weight: 600;
+    padding: 5px 12px;
 }
 
 .clear-btn,

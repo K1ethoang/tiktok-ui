@@ -6,6 +6,7 @@
     --black: #000;
     --white: #fff;
     --text-color: #333;
+    --grey: rgba(22, 24, 35, 0.5);
 
     // default layout
     --default-layout-header-height: 60px;
@@ -39,6 +40,5 @@ select,
 }
 
 a[href] {
-    color: var(--text-color);
     text-decoration: none;
 }
