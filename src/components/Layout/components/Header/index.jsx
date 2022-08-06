@@ -8,14 +8,15 @@ import {
     faSpinner,
 } from '@fortawesome/free-solid-svg-icons';
 import { faCircleQuestion, faKeyboard } from '@fortawesome/free-regular-svg-icons';
+
 import Tippy from '@tippyjs/react/headless'; // different import path!
 import { useEffect, useState } from 'react';
-
 import Button from '~/components/Button';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Header.module.scss';
 import image from '~/assets/images';
 import AccountItem from '~/components/AccountItem';
+
 import Menu from '~/components/Popper/Menu';
 
 const cx = classNames.bind(styles);
@@ -65,6 +66,7 @@ function Header() {
                 >
                     <div className={cx('search')}>
                         <input type="text" placeholder="Search accounts and videos" spellCheck={false} />
+
                         <button className={cx('clear-btn')}>
                             <FontAwesomeIcon icon={faCircleXmark} />
                         </button>
@@ -81,7 +83,6 @@ function Header() {
                 <div className={cx('action')}>
                     <Button text>Upload</Button>
                     <Button primary>Log In</Button>
-
                     <Menu items={MENU_ITEMS}>
                         <button className={cx('more-btn')}>
                             <FontAwesomeIcon icon={faEllipsisVertical} />
