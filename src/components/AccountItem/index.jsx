@@ -10,17 +10,17 @@ function AccountItem() {
         <div className={cx('wrapper')}>
             <img
                 className={cx('avatar')}
-                src="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/be2f9f550108805cf58c4c7ffaf9522b~c5_300x300.webp?x-expires=1659628800&x-signature=ayk9bN%2FTxZLenhZUaaEaMxiJLLo%3D"
-                alt="Thuy Tien"
+                src="https://avatars.githubusercontent.com/u/88199151?s=96&v=4"
+                alt="K1ethoang"
             />
             <div className={cx('info')}>
                 <h4 className={cx('username')}>
-                    <span>missgrand2021.thuytien</span>
+                    <span>K1ethoang</span>
                     <span className={cx('check')}>
                         <FontAwesomeIcon icon={faCheckCircle} />
                     </span>
                 </h4>
-                <p className={cx('name')}>Nguyễn Thúc Thuỳ Tiên</p>
+                <p className={cx('name')}>Hoang Gia Kiet</p>
             </div>
         </div>
     );

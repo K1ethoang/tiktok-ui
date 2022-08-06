@@ -99,3 +99,12 @@
         height: calc(var(--search-height) - (var(--search-top-space) * 2));
     }
 }
+
+// action
+.more-btn {
+    font-size: 2rem;
+    margin-left: 2.7rem;
+    padding: 4px 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
