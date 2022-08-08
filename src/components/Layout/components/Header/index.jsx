@@ -70,6 +70,7 @@ function Header() {
     }, []);
 
     // Handle logic
+
     const handleMenuChange = (menuItem) => {};
 
     const userMenu = [
@@ -134,6 +135,7 @@ function Header() {
                 </HeadlessTippy>
 
                 <div className={cx('action')}>
+                
                     {currentUser ? (
                         <>
                             <Tippy content="Upload video" placement="bottom">
@@ -165,6 +167,7 @@ function Header() {
                                 <FontAwesomeIcon icon={faEllipsisVertical} />
                             </button>
                         )}
+
                     </Menu>
                 </div>
             </div>
