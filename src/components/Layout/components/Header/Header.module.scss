@@ -105,20 +105,21 @@
 .action {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .more-btn {
     font-size: 2rem;
-    margin-left: 2.7rem;
+    margin-left: 2rem;
     padding: 4px 8px;
     background-color: transparent;
     cursor: pointer;
 }
 
 .action-btn {
-    font-size: 2.2rem;
     color: #161823;
     background-color: transparent;
+    margin: 0 10px;
     cursor: pointer;
 }
 
@@ -127,6 +128,6 @@
     height: 3.2rem;
     object-fit: cover;
     border-radius: 99.9rem;
-    margin-left: 2.4rem;
+    margin-left: 1.2rem;
     cursor: pointer;
 }
