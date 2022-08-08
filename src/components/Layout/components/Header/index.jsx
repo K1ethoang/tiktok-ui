@@ -70,7 +70,6 @@ function Header() {
     }, []);
 
     // Handle logic
-
     const handleMenuChange = (menuItem) => {};
 
     const userMenu = [
@@ -135,7 +134,7 @@ function Header() {
                 </HeadlessTippy>
 
                 <div className={cx('action')}>
-                    <Button to="/upload" normal leftIcon={<PlusIcon />}>
+                    <Button className={cx('action-btn')} to="/upload" normal leftIcon={<PlusIcon />}>
                         Upload
                     </Button>
                     {currentUser ? (
@@ -161,7 +160,7 @@ function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx('user-avatar')}
-                                src="https://avatars.githubusercasdfontent.com/u/88199151?s=96&v=4"
+                                src="https://avatars.githubusercontent.com/u/88199151?s=40&v=4"
                                 alt="K1ethoang"
                             />
                         ) : (

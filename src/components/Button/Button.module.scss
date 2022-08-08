@@ -32,13 +32,13 @@
 
 .icon + .title,
 .title + .icon {
-    margin-left: 6px;
+    margin-left: 8px;
 }
 
 // Button types
 .normal {
     font-weight: 600;
-    padding: 4px 16px;
+    padding: 5px 16px;
     border: 1px solid rgba(22, 24, 35, 0.12);
     border-radius: 0;
     &:hover {
