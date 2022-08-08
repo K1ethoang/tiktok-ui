@@ -7,6 +7,7 @@
     border-radius: 4px;
     font-weight: 700;
     font-size: 1.6rem;
+    font-family: 'ProximaNova', sans-serif;
     cursor: pointer;
     background-color: var(--white);
     border: 1px solid transparent;
@@ -23,16 +24,28 @@
 }
 
 .icon {
+    display: inline-flex;
+    align-items: center;
     width: 2rem;
     text-align: center;
 }
 
 .icon + .title,
 .title + .icon {
-    margin-left: 8px;
+    margin-left: 6px;
 }
 
 // Button types
+.normal {
+    font-weight: 600;
+    padding: 4px 16px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 0;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
 .rounded {
     min-width: 9rem;
     padding: 7px 16px;
