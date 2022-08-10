@@ -25,7 +25,6 @@
 
 .icon {
     display: inline-flex;
-    align-items: center;
     width: 2rem;
     text-align: center;
 }
@@ -36,24 +35,26 @@
 }
 
 // Button types
+
 .normal {
-    font-weight: 600;
-    padding: 5px 16px;
-    border: 1px solid rgba(22, 24, 35, 0.12);
     border-radius: 0;
-    &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
-    }
 }
 
+.rounded {
+    border-radius: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.normal,
 .rounded {
     min-width: 9rem;
     padding: 7px 16px;
     font-size: 1.4rem;
-    border-radius: 99.9rem;
     border: 1px solid rgba(22, 24, 35, 0.12);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
 
+.normal,
+.rounded {
     &:hover {
         border-color: rgba(22, 24, 35, 0.2);
         background-color: rgba(22, 24, 35, 0.03);
