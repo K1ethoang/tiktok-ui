@@ -1,6 +1,8 @@
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import classNames from 'classnames/bind';
+import Image from '~/components/Image';
 import styles from './AccountItem.module.scss';
 
 const cx = classNames.bind(styles);
@@ -8,11 +10,12 @@ const cx = classNames.bind(styles);
 function AccountItem() {
     return (
         <div className={cx('wrapper')}>
-            <img
-                className={cx('avatar')}
+            <Image
                 src="https://avatars.githubusercontent.com/u/88199151?s=96&v=4"
                 alt="K1ethoang"
+                className={cx('avatar')}
             />
+
             <div className={cx('info')}>
                 <h4 className={cx('username')}>
                     <span>K1ethoang</span>
@@ -21,7 +24,7 @@ function AccountItem() {
                         <FontAwesomeIcon icon={faCheckCircle} />
                     </span>
                 </h4>
-                <p className={cx('name')}>Hoang Gia Kiet</p>
+                <p className={cx('name')}>Hoàng Gia Kiệt</p>
             </div>
         </div>
     );
