@@ -1,5 +1,5 @@
-function Following() {
-    return <h2>Following page</h2>;
+function Home() {
+    return <h2 style={{ height: 2000 }}>Home page</h2>;
 }
 
-export default Following;
+export default Home;

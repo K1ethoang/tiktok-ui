@@ -2,7 +2,7 @@ const routes = {
     home: '/',
     following: '/following',
     profile: '/@:nickname',
-    upload: '/followinuploadg',
+    upload: '/upload',
     search: '/search',
 };
 
