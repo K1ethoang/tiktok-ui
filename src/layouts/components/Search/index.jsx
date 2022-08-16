@@ -4,7 +4,7 @@ import HeadlessTippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 import { useEffect, useState, useRef } from 'react';
 
-import * as searchServices from '~/apis/searchServices';
+import * as searchServices from '~/services/searchService';
 import { useDebounce } from '~/hooks';
 import AccountItem from '~/components/AccountItem';
 import { SearchIcon } from '~/components/Icons';
