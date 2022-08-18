@@ -57,36 +57,36 @@ const MENU_ITEMS = [
     },
 ];
 
+const userMenu = [
+    {
+        icon: <UserIcon />,
+        title: 'View profile',
+        to: '/@K1ethoang',
+    },
+    {
+        icon: <CoinIcon />,
+        title: 'Get coins',
+        to: '/coin',
+    },
+    {
+        icon: <GearIcon />,
+        title: 'Settings',
+        to: '/setting',
+    },
+    ...MENU_ITEMS,
+    {
+        icon: <LogOutIcon />,
+        title: 'Log out',
+        to: '/logout',
+        separate: true,
+    },
+];
+
 function Header() {
     const currentUser = true;
 
     // Handle logic
     const handleMenuChange = (menuItem) => {};
-
-    const userMenu = [
-        {
-            icon: <UserIcon />,
-            title: 'View profile',
-            to: '/@K1ethoang',
-        },
-        {
-            icon: <CoinIcon />,
-            title: 'Get coins',
-            to: '/coin',
-        },
-        {
-            icon: <GearIcon />,
-            title: 'Settings',
-            to: '/setting',
-        },
-        ...MENU_ITEMS,
-        {
-            icon: <LogOutIcon />,
-            title: 'Log out',
-            to: '/logout',
-            separate: true,
-        },
-    ];
 
     return (
         <header className={cx('wrapper')}>
@@ -119,9 +119,7 @@ function Header() {
                             </div>
                         </>
                     ) : (
-                        <>
-                            <Button primary>Log In</Button>
-                        </>
+                        <Button primary>Log In</Button>
                     )}
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
